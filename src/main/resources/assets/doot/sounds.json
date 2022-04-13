@@ -1,0 +1,26 @@
+{
+  "entity.trumpet_skeleton.ambient": {
+    "subtitle": "subtitles.entity.doot.trumpet_skeleton.ambient",
+    "sounds": [
+      "doot:doot_doot"
+    ]
+  },
+
+  "entity.parrot.imitate.trumpet_skeleton": {
+    "sounds": [
+      {
+        "name": "doot:doot_doot",
+        "volume": 0.4,
+        "pitch": 1.8
+      }
+    ],
+    "subtitle": "subtitles.entity.parrot.imitate.trumpet_skeleton"
+  },
+
+  "item.trumpet.use": {
+    "subtitle": "subtitles.item.doot.trumpet.use",
+    "sounds": [
+      "doot:doot_doot"
+    ]
+  }
+}

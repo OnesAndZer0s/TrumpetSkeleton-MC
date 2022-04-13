@@ -1,0 +1,10 @@
+{
+  "entity.doot.trumpet_skeleton": "Trumpet Skeleton",
+
+  "subtitles.entity.doot.trumpet_skeleton.ambient": "Trumpet Skeleton doots",
+  "subtitles.entity.parrot.imitate.trumpet_skeleton": "Parrot doots",
+  "subtitles.item.doot.trumpet.use": "Doot",
+
+  "item.doot.trumpet": "Trumpet",
+  "item.doot.trumpet_skeleton_egg": "Trumpet Skeleton Spawn Egg"
+}

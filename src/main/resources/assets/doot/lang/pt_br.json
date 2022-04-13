@@ -1,0 +1,12 @@
+{
+  "_credit": "Translations provided by SegaSaturn",
+
+  "entity.doot.trumpet_skeleton": "Esqueleto de trombeta",
+
+  "subtitles.entity.doot.trumpet_skeleton.ambient": "Tarará de esqueleto",
+  "subtitles.entity.parrot.imitate.trumpet_skeleton": "Tarará de Papagaio",
+  "subtitles.item.doot.trumpet.use": "Tara tara",
+
+  "item.doot.trumpet": "Trompete",
+  "item.doot.trumpet_skeleton_spawn_egg": "Ovo gerador de esqueleto de trombeta"
+}

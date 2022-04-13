@@ -1,0 +1,12 @@
+{
+  "_credit": "Translations provided by Stevedercoole",
+
+  "entity.doot.trumpet_skeleton": "Trompetenskelett",
+
+  "subtitles.entity.doot.trumpet_skeleton.ambient": "Skelett Doots",
+  "subtitles.entity.parrot.imitate.trumpet_skeleton": "Papageien Doots",
+  "subtitles.item.doot.trumpet.use": "Doot Doot",
+
+  "item.doot.trumpet": "Trompete",
+  "item.doot.trumpet_skeleton_spawn_egg": "Trompetenskelett-Ei"
+}
