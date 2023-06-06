@@ -37,7 +37,7 @@ public class Config {
                 SPAWN_WEIGHT = COMMON_BUILDER
                                 .comment(
                                                 "Spawn weight")
-                                .defineInRange("spawn_weight", 1, 0, Integer.MAX_VALUE);
+                                .defineInRange("spawn_weight", 5, 0, Integer.MAX_VALUE);
                 MIN_GROUP_SIZE = COMMON_BUILDER
                                 .comment(
                                                 "Minimum Trumpet Skeletons in group.")
