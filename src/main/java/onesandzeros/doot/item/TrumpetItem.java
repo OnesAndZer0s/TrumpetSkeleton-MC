@@ -13,6 +13,7 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
+import onesandzeros.doot.setup.Config;
 import onesandzeros.doot.setup.Registration;
 
 public class TrumpetItem extends Item {
@@ -30,7 +31,8 @@ public class TrumpetItem extends Item {
       List<LivingEntity> spooked = world.getEntitiesOfClass(
           LivingEntity.class,
           user.getBoundingBox().inflate(
-              10.0 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, user.getMainHandItem()) * 2));
+              Config.TRUMPET_RANGE.get()
+                  + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, user.getMainHandItem()) * 2));
 
       for (LivingEntity entity : spooked) {
         if (entity == user)

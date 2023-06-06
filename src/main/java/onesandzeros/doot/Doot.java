@@ -44,9 +44,9 @@ public class Doot {
 
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void onBiomeLoad(final BiomeLoadingEvent event) {
-        double relativeWeight = Config.RELATIVE_SPAWN_WEIGHT.get();
+        int spawnWeight = Config.SPAWN_WEIGHT.get();
 
-        if (relativeWeight > 0) {
+        if (spawnWeight > 0) {
             int skeletonWeight = 0;
 
             for (SpawnerData spawner : event.getSpawns().getSpawner(MobCategory.MONSTER)) {
@@ -60,7 +60,7 @@ public class Doot {
                 event.getSpawns().addSpawn(
                         MobCategory.MONSTER,
                         new SpawnerData(Registration.TRUMPET_SKELETON.get(),
-                                (int) Math.ceil(skeletonWeight * relativeWeight),
+                                spawnWeight,
                                 Config.MIN_GROUP_SIZE.get(),
                                 Config.MAX_GROUP_SIZE.get()));
             }

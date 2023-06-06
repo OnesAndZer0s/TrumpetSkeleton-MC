@@ -56,12 +56,10 @@ import javax.annotation.Nullable;
 public class TrumpetSkeletonEntity extends Skeleton {
     private final TrumpetAttackGoal<AbstractSkeleton> trumpetGoal = new TrumpetAttackGoal<>(this, 1.0D, 40, 6.0F);
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 1.2D, false);
-    private boolean stealing = false;
 
     public TrumpetSkeletonEntity(EntityType<? extends Skeleton> type, Level worldIn) {
         super(type, worldIn);
         this.reassessWeaponGoal();
-        // Skeleton
     }
 
     @Override
@@ -124,26 +122,6 @@ public class TrumpetSkeletonEntity extends Skeleton {
         return SoundEvents.SKELETON_STEP;
     }
 
-    @Override
-    public void load(CompoundTag tag) {
-        super.load(tag);
-        stealing = tag.getBoolean("Stealing");
-    }
-
-    @Override
-    public boolean save(CompoundTag tag) {
-        tag.putBoolean("Stealing", stealing);
-        return super.save(tag);
-    }
-
-    public boolean isStealing() {
-        return stealing;
-    }
-
-    public void setStealing(boolean stealing) {
-        this.stealing = stealing;
-    }
-
     // @Override
     // public Packet<?> getAddEntityPacket() {
     //     return NetworkHooks.getEntitySpawningPacket(this);
@@ -172,7 +150,6 @@ public class TrumpetSkeletonEntity extends Skeleton {
                 if (this.level.getDifficulty() != Difficulty.HARD) {
                     i = 40;
                 }
-
                 this.trumpetGoal.setMinAttackInterval(i);
                 this.goalSelector.addGoal(4, this.trumpetGoal);
             } else {
