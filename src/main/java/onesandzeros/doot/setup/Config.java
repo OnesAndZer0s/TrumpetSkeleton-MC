@@ -6,7 +6,7 @@ import net.minecraftforge.fml.config.ModConfig;
 
 public class Config {
     public static final String CATEGORY_SPAWNING = "spawning";
-    public static final String CATEGORY_TRUMPET = "spawning";
+    public static final String CATEGORY_TRUMPET = "trumpet";
 
     public static ForgeConfigSpec CONFIG;
     public static ForgeConfigSpec.DoubleValue RELATIVE_SPAWN_WEIGHT;
@@ -53,7 +53,7 @@ public class Config {
         TRUMPET_DURABILITY = COMMON_BUILDER
                 .comment(
                         "Trumpet durability.")
-                .defineInRange("relative_spawn_weight", 420, 1, Integer.MAX_VALUE);
+                .defineInRange("durability", 420, 1, Integer.MAX_VALUE);
         COMMON_BUILDER.pop();
 
         // COMMON_BUILDER.comment("Trumpet Skeleton spawn settings").push();
